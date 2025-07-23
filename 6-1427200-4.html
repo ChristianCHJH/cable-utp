@@ -1,0 +1,112 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Sitio web de ds3comunicaciones, líder en soluciones de redes y comunicaciones. Ofrecemos productos para WiFi y extensión de señal." />
+  <meta name="keywords"
+    content="En Peru, ANTENA HYPERLINK, internet inalambrico,ANTENA PARA INTERNET,Antena Omnidireccional,Antena de panel, Antena 5.8 UAP-AC-EDU AccessPoint UAP-AC-EDU para interior de Doble banda 5GHz y 2.4 GHz , 802.11a/b/g/n/ac, MIMO3x3 ( 2,4 GHz ) 22dBm 450 Mbps , MIMO3x3 ( 5 GHz) 22dBm / 1300Mbps, tres Antenas de doble banda de 2,4 GHz : 3 dBi , 5 GHz : 3 dBi / 01 puerto Ethernet 10/100/1000 Mbps, PoE Pasivo 48v o 802.3at PoE+ compatibles, Incluye PoE 48V 0.5A Gige , software y kit para montaje, marca UBiQuiTi" />
+  <meta name="author" content="ds3comunicaciones" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="./js/nav.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <title>
+    Cable UTP AMP Categoria 6 Chaqueta CMR 23AWG 6-1427200-4
+  </title>
+</head>
+
+<body>
+  <div id="cabecera"></div>
+
+  <main class="">
+        <div id="cascadaNavegacion"></div>
+
+    <div class="mx-auto border">
+      <div class="flex flex-col md:flex-row md:justify-evenly  mx-auto">
+
+        <div id="siderbarDerecho"></div>
+
+        <div id="6-1427200-4" class="w-full lg:w-4/6 bg-white rounded-lg shadow"></div>
+        
+
+        <aside id="listaPrecios" class="hidden lg:block w-full md:w-1/5 lg:w-1/6 bg-white p-2 rounded-lg shadow-md h-[80vh] overflow-y-auto scrollbar-hide"></aside>
+
+      </div>
+    </div>
+
+        <div id="productosSimilares"></div>
+
+  </main>
+
+    <div id="footer"></div>
+
+    <a href="https://wa.me/994428965?text=Hola%20necesito%20ayuda" target="_blank"
+  class="fixed bottom-5 right-5 z-50 bg-green-500 hover:bg-green-600 text-white w-14 h-14 md:w-16 md:h-16 flex items-center justify-center rounded-full shadow-lg transition-all duration-300 ease-in-out hover:scale-110">
+  <i class="fab fa-whatsapp text-2xl md:text-3xl"></i>
+</a>
+
+  <script src="./js/change_tabs.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#cabecera").load("/components/cabecera.html");
+      $("#footer").load("/components/footer.html");
+      $("#siderbarDerecho").load("/components/siderbarDerecho.html");
+      $("#listaPrecios").load("/components/listaPrecios.html");
+      $("#6-1427200-4").load("/productos/6-1427200-4.html");
+      $("#productosSimilares").load("/components/productosSimilares.html");
+      $("#cascadaNavegacion").load("/components/cascadaNavegacion.html");
+    });
+  </script>
+<script>
+  // Cambia la imagen grande al hacer clic en una miniatura
+  function toExchangeImage(imagenMiniatura) {
+    const imagenPrincipal = document.getElementById('img_main');
+    if (imagenPrincipal && imagenMiniatura && imagenMiniatura.src) {
+      imagenPrincipal.src = imagenMiniatura.src;
+    }
+  }
+
+  // Abre el visor de imagen (modal)
+  function viewImage(rutaImagen) {
+    const modal = document.getElementById('image-modal');
+    const imagenEnModal = document.getElementById('modal-image');
+    imagenEnModal.src = rutaImagen;
+    modal.classList.remove('hidden');
+  }
+
+  // Cierra el visor de imagen
+  function closeModal() {
+    const modal = document.getElementById('image-modal');
+    modal.classList.add('hidden');
+  }
+</script>
+
+
+<script>
+  function showProductTab() {
+    console.log("Se hizo clic en la pestaña Producto");
+    // Aquí puedes mostrar el contenido del producto y ocultar el de imágenes
+    document.getElementById('product-section').classList.remove('hidden');
+    document.getElementById('images-section').classList.add('hidden');
+  }
+
+  function showImagesTab() {
+    console.log("Se hizo clic en la pestaña Imágenes");
+    // Aquí puedes mostrar el contenido de imágenes y ocultar el de producto
+    document.getElementById('product-section').classList.add('hidden');
+    document.getElementById('images-section').classList.remove('hidden');
+  }
+</script>
+
+
+
+
+</body>
+
+</html>
