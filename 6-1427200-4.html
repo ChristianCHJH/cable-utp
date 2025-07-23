@@ -51,58 +51,7 @@
   <i class="fab fa-whatsapp text-2xl md:text-3xl"></i>
 </a>
 
-  <script src="./js/change_tabs.js"></script>
-  <script>
-    $(document).ready(function () {
-      $("#cabecera").load("/components/cabecera.html");
-      $("#footer").load("/components/footer.html");
-      $("#siderbarDerecho").load("/components/siderbarDerecho.html");
-      $("#listaPrecios").load("/components/listaPrecios.html");
-      $("#6-1427200-4").load("/productos/6-1427200-4.html");
-      $("#productosSimilares").load("/components/productosSimilares.html");
-      $("#cascadaNavegacion").load("/components/cascadaNavegacion.html");
-    });
-  </script>
-<script>
-  // Cambia la imagen grande al hacer clic en una miniatura
-  function toExchangeImage(imagenMiniatura) {
-    const imagenPrincipal = document.getElementById('img_main');
-    if (imagenPrincipal && imagenMiniatura && imagenMiniatura.src) {
-      imagenPrincipal.src = imagenMiniatura.src;
-    }
-  }
-
-  // Abre el visor de imagen (modal)
-  function viewImage(rutaImagen) {
-    const modal = document.getElementById('image-modal');
-    const imagenEnModal = document.getElementById('modal-image');
-    imagenEnModal.src = rutaImagen;
-    modal.classList.remove('hidden');
-  }
-
-  // Cierra el visor de imagen
-  function closeModal() {
-    const modal = document.getElementById('image-modal');
-    modal.classList.add('hidden');
-  }
-</script>
-
-
-<script>
-  function showProductTab() {
-    console.log("Se hizo clic en la pestaña Producto");
-    // Aquí puedes mostrar el contenido del producto y ocultar el de imágenes
-    document.getElementById('product-section').classList.remove('hidden');
-    document.getElementById('images-section').classList.add('hidden');
-  }
-
-  function showImagesTab() {
-    console.log("Se hizo clic en la pestaña Imágenes");
-    // Aquí puedes mostrar el contenido de imágenes y ocultar el de producto
-    document.getElementById('product-section').classList.add('hidden');
-    document.getElementById('images-section').classList.remove('hidden');
-  }
-</script>
+<script src="../productos/producto.js"></script>
 
 
 
