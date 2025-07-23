@@ -1,13 +1,13 @@
 // js/producto.js
 
 $(document).ready(function () {
-  $("#cabecera").load("../components/cabecera.html");
-  $("#footer").load("../components/footer.html");
-  $("#siderbarDerecho").load("../components/siderbarDerecho.html");
-  $("#listaPrecios").load("../components/listaPrecios.html");
-  $("#6-1427200-4").load("../productos/6-1427200-4.html");
-  $("#productosSimilares").load("../components/productosSimilares.html");
-  $("#cascadaNavegacion").load("../components/cascadaNavegacion.html");
+  $("#cabecera").load("components/cabecera.html");
+  $("#footer").load("components/footer.html");
+  $("#siderbarDerecho").load("components/siderbarDerecho.html");
+  $("#listaPrecios").load("components/listaPrecios.html");
+  $("#6-1427200-4").load("productos/6-1427200-4.html");
+  $("#productosSimilares").load("components/productosSimilares.html");
+  $("#cascadaNavegacion").load("components/cascadaNavegacion.html");
 });
 
 function toExchangeImage(imagenMiniatura) {
